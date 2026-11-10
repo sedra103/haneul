@@ -1,0 +1,77 @@
+
+.word-form {
+  background-color: #fff;
+  padding: 28px;
+  border: 1px solid #eee8df;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.word-form h2 {
+  color: #58745c;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.word-form label {
+  display: block;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.word-form input,
+.word-form textarea,
+.word-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e1d9;
+  border-radius: 8px;
+  background-color: #fdfcf9;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.word-form input:focus,
+.word-form textarea:focus,
+.word-form select:focus {
+  border-color: #82947a;
+  box-shadow: 0 0 0 3px rgba(130, 148, 122, 0.12);
+}
+
+.word-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.form-actions button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background-color: #58745c;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-actions button:hover {
+  background-color: #405c45;
+}
+
+.form-actions button[type="button"] {
+  background-color: #e9e8e2;
+  color: #555;
+}
+
+.form-actions button[type="button"]:hover {
+  background-color: #deddd6;
+}

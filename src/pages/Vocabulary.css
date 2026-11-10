@@ -1,0 +1,148 @@
+
+.vocabulary-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.vocabulary-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.vocabulary-heading > p {
+  color: #82947a;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.vocabulary-heading h1 {
+  color: #58745c;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.vocabulary-heading span {
+  color: #777;
+}
+
+.vocabulary-content {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.word-list h2 {
+  color: #58745c;
+  margin-bottom: 20px;
+}
+
+.word-card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #eee8df;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.word-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.word-card-header h3 {
+  color: #58745c;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.word-card-header p {
+  color: #666;
+}
+
+.word-category {
+  background: #edf2e9;
+  color: #58745c;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.word-example {
+  color: #666;
+  background: #faf8f3;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.word-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.word-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #edf2e9;
+  color: #58745c;
+}
+
+.word-actions button:hover {
+  opacity: 0.8;
+}
+
+.empty-message {
+  color: #888;
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  .vocabulary-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.word-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.word-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.word-card-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0eee8;
+}
+
+.word-example {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.word-actions button {
+  transition: background-color 0.2s ease;
+}
+
+.word-actions button:first-child:hover {
+  background-color: #dce8d8;
+}
+
+.word-actions button:last-child {
+  background-color: #f8e9e6;
+  color: #a45d52;
+}
+
+.word-actions button:last-child:hover {
+  background-color: #f1d8d3;
+}
